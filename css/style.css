@@ -1,7 +1,7 @@
 body {
   text-align: center;
   background: linear-gradient(to bottom, #6ab7f5, #fff);
-  min-height: 100vh;
+  height: 100vh;
   font-size: large;
 }
 main {
@@ -9,21 +9,12 @@ main {
   height: 100%;
   display: flex;
   justify-content: center;
-}
-figure {
-  width: 400px;
-  height: 600px;
+  align-items: center;
 }
 #container {
   position: relative;
 }
-#formPK,
-#nome,
-#info1,
-#info2,
-#botoes {
-  text-transform: capitalize;
-}
+
 #imgPK {
   position: absolute;
   top: 30%;
@@ -60,9 +51,17 @@ figure {
   bottom: 50%;
   left: 55%;
 }
+
+#informacoes-recuperadas {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 #btnVoltar,
-#btnProximo,
-#btnSom {
+#btnProximo {
   width: 20%;
   padding: 2%;
   border: 2px solid #000;
