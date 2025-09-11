@@ -5,10 +5,9 @@ const connection = mysql.createConnection({
     user: "root",
     password: "root",
     database: "herbario",
-    port: 3306
 })
 
-connection.connect(mysql, (err)=>{
+connection.connect((err)=>{
     try{
         console.log("Servidor Conectado")
     } catch {

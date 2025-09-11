@@ -10,4 +10,6 @@ CREATE TABLE plantas(
 );
 
 INSERT INTO plantas (foto, nome, dominio) 
-VALUES ()
+VALUES ("", "planta 1", "comum"),
+("", "planta 2", "raro");
+

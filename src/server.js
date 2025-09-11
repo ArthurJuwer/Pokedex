@@ -11,16 +11,12 @@ app.use(cors())
 app.use(express.json())
 
 app.get("/buscar", (req,res) => {
-    db.query("SELECT foto, nome, dominio, cores FROM plantas", (err, results)=>{
+    db.query("SELECT foto, nome, dominio FROM plantas", (err, results)=>{
         if(err){
-            console.error("Ocorreu um erro: " + err)
-            res.status(500, json({ erro: "Erro ao buscar" }))
+            console.error("Ocorreu um erro: ", err)
+            res.status(500).json({ erro: "Erro ao buscar" })
         } else {
-            res.json({
-                foto: foto,
-                nome: nome,
-                dominio: dominio
-            })
+            res.json(results)
         }
     })
     
