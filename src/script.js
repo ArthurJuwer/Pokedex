@@ -2,25 +2,46 @@ let plantasArray = []
 let numeroId = -1
 let numeroTotalPlantas = 0
 
-let nome = document.querySelector("#nome")
+let listaInformacoes = document.querySelector("#informacoes-recuperadas")
+let fotoPK = document.querySelector("#fotoPK")
 
 async function carregarPlantas() {
     const resposta = await fetch('http://localhost:3000/buscar')
     const plantas = await resposta.json()
+    console.log(plantas)
 
     plantasArray = plantas
-    console.log(plantas)
+    
     numeroTotalPlantas = plantas.length
 
     botaoAvancar.disabled = false
     botaoVoltar.disabled = false
 }
 
+function mostrarPlanta() {
+    if (numeroId >= 0 && numeroId < numeroTotalPlantas) {
+        const planta = plantasArray[numeroId]
+
+        fotoPK.src = `${planta.imagem}`
+
+        listaInformacoes.innerHTML = `
+            <h4>${planta.nome_popular} (${planta.nome_cientifico})</h4>
+            <p><strong>Família:</strong> ${planta.familia_botanica}</p>
+            <p><strong>Origem:</strong> ${planta.origem_distribuicao}</p>
+            <p><strong>Usos medicinais:</strong> ${planta.usos_medicinais}</p>
+            <p><strong>Princípios ativos:</strong> ${planta.principios_ativos}</p>
+            <p><strong>Parte utilizada:</strong> ${planta.parte_utilizada}</p>
+            <p><strong>Modo de preparo:</strong> ${planta.modo_preparo}</p>
+            <p><strong>Contraindicações:</strong> ${planta.contraindicacoes}</p>
+        `
+    }
+}
+
+
 function avancarPlanta() {
     if (numeroId < numeroTotalPlantas - 1) {
         numeroId++
-        nome.textContent = plantasArray[numeroId].nome
-
+        mostrarPlanta()
     } else {
         console.log("Fim da lista de plantas - Avancar")
     }
@@ -33,7 +54,7 @@ botaoAvancar.addEventListener("click", avancarPlanta)
 function VoltarPlanta(){
     if (numeroId > 0) {
         numeroId--
-        nome.textContent = plantasArray[numeroId].nome
+        mostrarPlanta()
     } else {
         console.log("Fim da lista de plantas - Anterior")
     }
@@ -44,3 +65,4 @@ botaoVoltar.addEventListener("click", VoltarPlanta)
 botaoAvancar.disabled = true
 botaoVoltar.disabled = true
 carregarPlantas()
+mostrarPlanta()
