@@ -1,5 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
 let plantasArray = []
-let numeroId = -1
+let numeroId = 0
 let numeroTotalPlantas = 0
 
 let listaInformacoes = document.querySelector("#informacoes-recuperadas")
@@ -16,6 +17,8 @@ async function carregarPlantas() {
 
     botaoAvancar.disabled = false
     botaoVoltar.disabled = false
+
+    mostrarPlanta()
 }
 
 function mostrarPlanta() {
@@ -65,4 +68,6 @@ botaoVoltar.addEventListener("click", VoltarPlanta)
 botaoAvancar.disabled = true
 botaoVoltar.disabled = true
 carregarPlantas()
-mostrarPlanta()
+
+
+});

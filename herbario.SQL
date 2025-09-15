@@ -35,7 +35,7 @@ INSERT INTO plantas (
  'Alcaloides leves, flavonoides',
  'Folha e flor', 'Infusão e tintura',
  'Evitar durante a gravidez e lactação. Pode causar sonolência.',
- 'https://acdn-us.mitiendanube.com/stores/002/168/613/products/chamaedorea-elegans-11-a21ff7c8ecbdc1a…),
+ 'https://http2.mlstatic.com/D_NQ_NP_990538-MLB73958253094_012024-O.webp'),
  
 -- 3. Lavanda
 ('Lavanda', 'Lavandula angustifolia', 'Lamiaceae', 'Europa e Mediterrâneo',
@@ -51,7 +51,7 @@ INSERT INTO plantas (
  'Alcaloides oxindólicos, taninos, flavonoides',
  'Casca e raiz', 'Decocção, cápsula, tintura',
  'Evitar em casos de transplante ou doenças autoimunes. Contraindicada na gravidez.',
- 'https://images.tcdn.com.br/img/img_prod/350075/muda_de_unha_de_gato_pote_17_18501_1_11dbbb377fe5e48…),
+ 'https://images.tcdn.com.br/img/img_prod/350075/muda_de_unha_de_gato_pote_17_18501_1_11dbbb377fe5e4898a5f183a9c3a2149.jpg'),
  
 -- 5. Palmeira de jardim (exemplo genérico)
 ('Palmeira de jardim', 'Chamaedorea elegans', 'Arecaceae', 'México e América Central',
@@ -59,7 +59,7 @@ INSERT INTO plantas (
  'Sem princípios ativos relevantes para medicina tradicional',
  'Folhagem', 'Nenhum preparo medicinal conhecido',
  'Não ingerir. Planta ornamental.',
- 'https://plantasdonaeuzebia.com.br/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-16-at-08.48.38.…),
+ 'https://cdn.awsli.com.br/600x450/1860/1860362/produto/1558668386b01ad02c2.jpg'),
  
 -- 6. Ciúsia (possivelmente "Ciusia" fictícia – dados inventados)
 ('Clúsia', 'Clusia rubra', 'Malvaceae', 'Regiões tropicais do Brasil',
@@ -67,5 +67,5 @@ INSERT INTO plantas (
  'Flavonoides, mucilagens',
  'Folha e flor', 'Infusão, banho',
  'Evitar uso prolongado. Pode causar irritação dérmica em pessoas sensíveis.',
- 'https://boxloja-std-cdn-r2.minhaboxloja.com/lojas/9s0e9/produtos/6fc2f12e-6d39-432b-83bb-187811beee…);
+ 'https://boxloja-std-cdn-r2.minhaboxloja.com/lojas/9s0e9/produtos/6fc2f12e-6d39-432b-83bb-187811beee37.jpg');
  

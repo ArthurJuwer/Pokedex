@@ -33,7 +33,7 @@ body {
   height: 155px;
   border-radius: 10px;
   position: absolute;
-  top: 34.4%;
+  top: 34.7%;
   left: 45.5%; /* necessário para centralizar horizontalmente */
   transform: translate(-50%, -50%); /* corrija com % em ambos os valores */
 }
@@ -52,6 +52,9 @@ body {
 
 }
 
+#botoes{
+  margin-top: 30px;
+}
 
 #btnVoltar, #btnProximo, #btnAdicionar, #btnInicio {
   min-width: 20%;
